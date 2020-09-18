@@ -1,0 +1,94 @@
+{
+  "format": 1,
+  "restore": {
+    "/media/darshit/New Volume/Practice/AutoInsurance/Backend/TestApi/TestApi.csproj": {}
+  },
+  "projects": {
+    "/media/darshit/New Volume/Practice/AutoInsurance/Backend/TestApi/TestApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/media/darshit/New Volume/Practice/AutoInsurance/Backend/TestApi/TestApi.csproj",
+        "projectName": "TestApi",
+        "projectPath": "/media/darshit/New Volume/Practice/AutoInsurance/Backend/TestApi/TestApi.csproj",
+        "packagesPath": "/home/darshit/.nuget/packages/",
+        "outputPath": "/media/darshit/New Volume/Practice/AutoInsurance/Backend/TestApi/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/home/darshit/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "JsonSubTypes": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.7, )"
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.7.1, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.11.0, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.7.1, )"
+            },
+            "mongocsharpdriver": {
+              "target": "Package",
+              "version": "[2.11.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/3.1.402/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
