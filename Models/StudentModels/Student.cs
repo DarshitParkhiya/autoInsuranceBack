@@ -15,14 +15,8 @@ namespace TestApi.Models.StudentModels
         // [BsonDateTimeOptions(Kind = DateTimeKind.Local)]
         // public DateTime? dob { get; set; }
         public string email { get; set; }
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string universityId { get; set; }
-
-        [BsonRepresentation(BsonType.ObjectId)]
-        public string coursesId { get; set; }
         public string password { get; set; }
         public string fatherName { get; set; }
-
-
+        public List<StudentCourseDetails> courseDetails { get; set; }
     }
 }
