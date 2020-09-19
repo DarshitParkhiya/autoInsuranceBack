@@ -19,5 +19,10 @@ namespace TestApi.Services.StudentRepo
             _studentRepository = studentRepository;
         }
 
+        public async Task<Student> authenticateStudent(StudentAuth auth)
+        {
+            Student student = await _studentRepository.Collection.Find(x => x.password == auth.password && x.email == auth.emailId).SingleOrDefaultAsync();
+            return student;
+        }
     }
 }

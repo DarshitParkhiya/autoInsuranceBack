@@ -63,6 +63,21 @@ namespace TestApi.Controllers
             }
         }
 
+        [HttpPost("auth")]
+        public async Task<IActionResult> Create([FromBody] StudentAuth oUser)
+        {
+            try
+            {
+                Student student = await _studentService.authenticateStudent(oUser);
+
+                return new OkObjectResult(student);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Internal server error" + ex.Message);
+            }
+        }
+
         //[HttpPut("update")]
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] Student model)
